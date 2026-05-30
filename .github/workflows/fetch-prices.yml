@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -U pip
-          pip install yfinance
+          pip install -r requirements.txt
 
       - name: Fetch prices
         run: python scripts/fetch_prices.py
